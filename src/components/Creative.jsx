@@ -95,9 +95,8 @@ const Creative = () => {
             />
           </Heading>
           <Info>
-            Here I have listed some of my Web-Development projects which I have
-            hosted online. I have also linked their github repository along with
-            if in case you want dive deep into their code.
+            Apart from coding I am also keenly interested in Designing. Here are
+            some of my creatives which I have designed.
           </Info>
           <Link href="https://dribbble.com/Shra0910">
             <Button>See Designs</Button>
