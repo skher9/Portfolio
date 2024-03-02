@@ -18,8 +18,13 @@ const Wrapper = styled.div`
   flex: 1;
   border-bottom: 2px solid #2d9596;
   height: 70px;
-  max-width: 90vw;
+  max-width: 80vw;
   display: flex;
+`;
+
+const StyledLink = styled(Link)`
+  color: #2d9596;
+  text-decoration: none;
 `;
 
 const HeadingContainer = styled.div`
@@ -31,7 +36,8 @@ const HeadingContainer = styled.div`
 
 const Heading = styled.p`
   align-self: center;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
   color: #2d9596;
   font-family: "Alex Brush", cursive;
 `;
@@ -97,6 +103,11 @@ const CloseButton = styled.button`
   color: #2d9596;
 `;
 
+const A = styled.a`
+  text-decoration: none;
+  color: #2d9596;
+`;
+
 const Navbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isPopUpVisible, setPopUpVisible] = useState(false);
@@ -135,12 +146,18 @@ const Navbar = () => {
         ) : (
           <NavItems>
             <UL>
-              <Link to="/">
+              <StyledLink to="/">
                 <LI>Home</LI>
-              </Link>
-              <LI>Blogs</LI>
-              <LI>Projects</LI>
-              <LI>Contact</LI>
+              </StyledLink>
+              <StyledLink to="/Blogs">
+                <LI>Blogs</LI>
+              </StyledLink>
+              <StyledLink to="/Projects">
+                <LI>Projects</LI>
+              </StyledLink>
+              <A href="https://dribbble.com/Shra0910">
+                <LI>Creatives</LI>
+              </A>
             </UL>
           </NavItems>
         )}
@@ -148,12 +165,18 @@ const Navbar = () => {
           <PopUpContainer>
             <NavItems>
               <UL>
-                <Link to="/">
+                <StyledLink to="/">
                   <LI>Home</LI>
-                </Link>
-                <LI>Blogs</LI>
-                <LI>Projects</LI>
-                <LI>Contact</LI>
+                </StyledLink>
+                <StyledLink to="/Blogs">
+                  <LI>Blogs</LI>
+                </StyledLink>
+                <StyledLink to="/Projects">
+                  <LI>Projects</LI>
+                </StyledLink>
+                <A href="https://dribbble.com/Shra0910">
+                  <LI>Creatives</LI>
+                </A>
               </UL>
             </NavItems>
             <CloseButton onClick={handlePopUpClose}>
