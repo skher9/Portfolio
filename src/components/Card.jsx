@@ -50,7 +50,11 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Card = ({ title, description, technology, image }) => {
+const Link = styled.a`
+  color: #2d9596;
+`;
+
+const Card = ({ title, description, technology, image, live, git }) => {
   return (
     <Project>
       <Image src={image} />
@@ -66,10 +70,14 @@ const Card = ({ title, description, technology, image }) => {
         </Text>
         <ButtonContainer>
           <Button>
-            <LaunchOutlinedIcon />
+            <Link href={live}>
+              <LaunchOutlinedIcon />
+            </Link>
           </Button>
           <Button>
-            <GitHubIcon />
+            <Link href={git}>
+              <GitHubIcon />
+            </Link>
           </Button>
         </ButtonContainer>
       </InfoContainer>
