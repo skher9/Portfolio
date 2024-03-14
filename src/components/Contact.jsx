@@ -3,10 +3,7 @@ import styled from "styled-components";
 import SquareSharpIcon from "@mui/icons-material/SquareSharp";
 
 const Container = styled.div`
-  height: 600px;
   max-width: 100vw;
-  display: flex;
-  flex-direction: row;
   display: flex;
   text-align: center;
   align-items: center;
@@ -14,9 +11,10 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: 550px;
   width: 80vw;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 const ImageContainer = styled.div`
@@ -28,6 +26,7 @@ const ImageContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
+  flex: 1 1 50%;
   height: 100%;
   min-width: 60%;
   display: flex;

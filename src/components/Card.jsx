@@ -4,8 +4,8 @@ import LaunchOutlinedIcon from "@mui/icons-material/LaunchOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Project = styled.div`
-  height: 450px;
-  width: 25vw;
+  min-height: 450px;
+  min-width: 25vw;
   display: flex;
   flex-direction: column;
   border-radius: 10px;

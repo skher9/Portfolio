@@ -43,6 +43,9 @@ const ProjectContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 15px;
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const ProjectPage = () => {

@@ -12,6 +12,7 @@ import figma from "../utils/figma.svg";
 import tailwind from "../utils/tailwind.svg";
 
 const Container = styled.div`
+  margin-top: 50px;
   height: 500px;
   max-width: 100vw;
   display: flex;
