@@ -57,6 +57,13 @@ const UL = styled.ul`
   gap: 20px;
   font-size: larger;
   color: #2d9596;
+  @media screen and (max-width: 600px) {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    gap: 10px;
+    font-size: 15px;
+  }
 `;
 
 const Button = styled.button`
@@ -90,6 +97,9 @@ const PopUpContainer = styled.div`
   border: 2px solid #2d9596;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  @media screen and (max-width: 600px) {
+    width: 270px;
+  }
 `;
 
 const CloseButton = styled.button`
