@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Project = styled.div`
   min-height: 450px;
+  max-height: 500px;
   min-width: 25vw;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,6 @@ const Project = styled.div`
 const Image = styled.img`
   margin: 20px 20px 0px 20px;
   max-height: 180px;
-  min-height: 100px;
   border-radius: 20px;
 `;
 

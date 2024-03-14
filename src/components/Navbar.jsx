@@ -123,7 +123,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const lessThan50Percent = windowWidth < window.screen.width * 0.5;
+  const lessThan50Percent = windowWidth < 1000;
 
   const handleButtonClick = () => {
     setPopUpVisible(true);
