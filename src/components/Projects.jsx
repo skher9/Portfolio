@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import SquareSharpIcon from "@mui/icons-material/SquareSharp";
+import projects from "../assets/images/projects.svg"
 
 const Container = styled.div`
   margin-top: 40px;
@@ -96,9 +97,9 @@ const Projects = () => {
   return (
     <Container>
       <Wrapper>
-        <ImageContainer>
-          <Image src="https://simran-gangwani.netlify.app/images/projects.svg" />
-        </ImageContainer>
+      <ImageContainer>
+        <Image src={projects} alt="Projects Image" />
+      </ImageContainer>
         <InfoContainer>
           <Heading>
             My <P>Projects!</P>
@@ -108,9 +109,8 @@ const Projects = () => {
             />
           </Heading>
           <Info>
-            Here I have listed some of my Web-Development projects which I have
-            hosted online. I have also linked their github repository along with
-            if in case you want dive deep into their code.
+            Take a peek at some of my web development adventures that I’ve brought to life online. 🌐✨ Each project is linked to its GitHub repo, so you can dive deep into the code and see the magic behind the scenes! 🔍💻<br/><br/>
+            I’ll admit, these projects are a bit on the older side, but don’t worry—new, shiny ones are coming soon! 🌟 Stay tuned for the next level of digital awesomeness! 🎉
           </Info>
           <Link to="/Projects">
             <Button>See Projects</Button>

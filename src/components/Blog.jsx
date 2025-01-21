@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SquareSharpIcon from "@mui/icons-material/SquareSharp";
 import { Link } from "react-router-dom";
+import blogs from "../assets/images/blogs.svg"
 
 const Container = styled.div`
   margin-top: 40px;
@@ -96,7 +97,7 @@ const Projects = () => {
     <Container>
       <Wrapper>
         <ImageContainer>
-          <Image src="https://simran-gangwani.netlify.app/images/blogs.svg" />
+          <Image src={blogs} alt="Blog Image" />
         </ImageContainer>
         <InfoContainer>
           <Heading>
@@ -107,9 +108,9 @@ const Projects = () => {
             />
           </Heading>
           <Info>
-            I love writing in my free time. I have also worked with Scaler
-            Academy and Codedamn as a content writer and wrote several tech
-            blogs for their programming and development courses.
+            I absolutely love writing in my free time! ✍️📚<br/>
+            I’ve written several tech blogs on programming and development topics, sharing insights and knowledge with others. 💻📝<br/>
+            Stay tuned for more exciting reads coming your way! 📖✨
           </Info>
           <Link to="/Blogs">
             <Button>See Blogs</Button>

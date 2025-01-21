@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SquareSharpIcon from "@mui/icons-material/SquareSharp";
+import designing from "../assets/images/designing.svg"
 
 const Container = styled.div`
   margin-top: 40px;
@@ -95,8 +96,10 @@ const Creative = () => {
             />
           </Heading>
           <Info>
-            Apart from coding I am also keenly interested in Designing. Here are
-            some of my creatives which I have designed.
+            Apart from coding, I’m also deeply passionate about designing. 🎨💡<br/>
+            Here are some of my creative designs that I’ve crafted with love and attention to detail. 🖌️✨<br/>
+            Check them out and let me know what you think! 💬👀<br/><br/>
+            I’ve got a lot more designs in the works, so stay tuned for new ones coming soon! 🔥🌟 The creativity never stops! 🚀
           </Info>
           <Link href="https://dribbble.com/Shra0910">
             <Button>See Designs</Button>
@@ -109,7 +112,7 @@ const Creative = () => {
           <Line2></Line2>
         </InfoContainer>
         <ImageContainer>
-          <Image src="https://simran-gangwani.netlify.app/images/designing.svg" />
+          <Image src={designing} alt="Designes Image" />
         </ImageContainer>
       </Wrapper>
     </Container>

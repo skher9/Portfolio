@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SquareSharpIcon from "@mui/icons-material/SquareSharp";
+import intro from "../assets/images/intro.svg"
 
 const Container = styled.div`
   margin-top: 40px;
@@ -84,11 +85,14 @@ const Introduction = () => {
             />
           </Heading>
           <Info>
-            I code, I read, and lately, I've fallen in love with design. Turning
-            lines of code into digital wonders is my jam. On a break, you'll
-            find me nose-deep in a book.
-            <br />
-            Let's turn ideas into interactive experiences together!
+              I code, I read, and design has recently become my new obsession. 🎨💻<br/>
+              Turning lines of code into sleek, jaw-dropping digital experiences? That’s my jam. ✨🚀<br/><br/>
+
+              With 3 years of crafting intuitive and pixel-perfect frontends, 🎯<br/>
+              I’m now diving into the fascinating world of backend development to create seamless, full-stack magic. 🔧💡<br/><br/>
+
+              On my breaks, you’ll find me nose-deep in a book, exploring new ideas and perspectives. 📚🔍<br/>
+              Let’s turn bold ideas into interactive, end-to-end digital wonders together! 🌟🌐
           </Info>
           <SquareSharpIcon
             style={{ marginTop: 5, width: 20, color: "2d9596" }}
@@ -97,8 +101,9 @@ const Introduction = () => {
           <Line2></Line2>
         </InfoContainer>
         <ImageContainer>
-          <Image src="https://simran-gangwani.netlify.app/images/main.svg" />
+            <Image src={intro} alt="Intro Image" />
         </ImageContainer>
+
       </Wrapper>
     </Container>
   );

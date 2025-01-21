@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SquareSharpIcon from "@mui/icons-material/SquareSharp";
+import contact from "../assets/images/contact.svg"
 
 const Container = styled.div`
   max-width: 100vw;
@@ -94,9 +95,9 @@ const Creative = () => {
             />
           </Heading>
           <Info>
-            Do you have a have a project idea and are looking for a partner or
-            want to hire ? Drop me a mail or DM me on LinkedIn and let's have a
-            talk.
+              Got an awesome project idea but need a partner in crime? 🕵️‍♂️💡<br/>
+              Or maybe you’re on the lookout for someone to bring your vision to life? 💼🎨<br/>
+              Hit me up via email or slide into my DMs on LinkedIn – let’s make some digital magic together! ✨🚀 Let’s talk and turn ideas into epic reality! 🔥
           </Info>
           <Link href="https://www.linkedin.com/in/shravani-kher-0875281b6/">
             <Button>LinkedIn</Button>
@@ -109,7 +110,7 @@ const Creative = () => {
           <Line2></Line2>
         </InfoContainer>
         <ImageContainer>
-          <Image src="https://simran-gangwani.netlify.app/images/contact.svg" />
+          <Image src={contact} alt="Contact Image" />
         </ImageContainer>
       </Wrapper>
     </Container>
